@@ -1,0 +1,166 @@
+{
+  "usuarios": [
+    {
+      "nombre": "John Doe",
+      "email": "johndoe@example.com",
+      "password": "password123",
+      "id": "1"
+    },
+    {
+      "id": "2dfe",
+      "nombre": "Jherson",
+      "email": "jherson@gmail.com",
+      "password": "litjer123"
+    },
+    {
+      "id": "4db6",
+      "nombre": "Liliana",
+      "email": "lili@gmail.com",
+      "password": "lili123"
+    },
+    {
+      "id": "56d9",
+      "nombre": "no",
+      "email": "no@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "91a1",
+      "nombre": "Isac",
+      "email": "isac@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "cc3e",
+      "nombre": "ISAC",
+      "email": "isac@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "d44a",
+      "nombre": "isac",
+      "email": "jherson@gmail.com",
+      "password": "121212",
+      "imagen": ""
+    },
+    {
+      "id": "b39d",
+      "nombre": "tilin",
+      "email": "tilin@gmail.com",
+      "password": "123456"
+    },
+
+
+
+
+
+    
+    {
+      "id": "3c7d",
+      "nombre": "halo",
+      "email": "alo@gmail.com",
+      "password": "",
+      "imagen": ""
+    },
+    {
+      "id": "b301",
+      "nombre": "ola",
+      "email": "ola@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "8918",
+      "nombre": "mm",
+      "email": "NN@gmail.com",
+      "password": "2131312321",
+      "imagen": ""
+    },
+    {
+      "id": "9bf4",
+      "nombre": "nn",
+      "email": "NN@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "asignaturas": [
+    {
+      "imagen": "url_imagen_1.jpg",
+      "nombre": "Matemáticas",
+      "descripcion": "Clase de matemáticas avanzadas",
+      "profesor": "Prof. Juan",
+      "id": "d3f2"
+    },
+    {
+      "imagen": "url_imagen_2.jpg",
+      "nombre": "Historia",
+      "descripcion": "Clase de historia mundial",
+      "profesor": "Prof. María",
+      "id": "6f82"
+    },
+    {
+      "imagen": "url_imagen_3.jpg",
+      "nombre": "Ciencias",
+      "descripcion": "Clase de ciencias naturales",
+      "profesor": "Prof. Pedro",
+      "id": "6579"
+    }
+  ],
+  "clases": [
+    {
+      "id": "1",
+      "nombreUsuario": "John Doe",
+      "rut": "12345678-9",
+      "email": "johndoe@example.com",
+      "fecha": "2024-10-01",
+      "asignatura": {
+        "nombre": "Matemáticas",
+        "imagen": "url_imagen_1.jpg",
+        "descripcion": "Clase de matemáticas avanzadas"
+      }
+    },
+    {
+      "id": "2",
+      "nombreUsuario": "Jherson",
+      "rut": "87654321-0",
+      "email": "jherson@gmail.com",
+      "fecha": "2024-10-02",
+      "asignatura": {
+        "nombre": "Historia",
+        "imagen": "url_imagen_2.jpg",
+        "descripcion": "Clase de historia mundial"
+      }
+    }
+  ],
+  "justificaciones": [
+    {
+      "id": "1",
+      "nombreUsuario": "John Doe",
+      "email": "johndoe@example.com",
+      "fecha": "2024-11-01",
+      "asignatura": "Matemáticas",
+      "descripcion": "Asistencia a cita médica",
+      "imagen": "url_justificacion_1.jpg",
+      "comentariosDocente": [
+        {
+          "idDocente": "6f82",
+          "comentario": "Espero que estés mejor. Justificación aceptada."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "nombreUsuario": "Jherson",
+      "email": "jherson@gmail.com",
+      "fecha": "2024-11-02",
+      "asignatura": "Historia",
+      "descripcion": "Participación en actividad académica externa",
+      "imagen": "url_justificacion_2.jpg",
+      "comentariosDocente": [
+        {
+          "idDocente": "6579",
+          "comentario": "Por favor, proporciona más detalles sobre la actividad."
+        }
+      ]
+    }
+  ]
+}

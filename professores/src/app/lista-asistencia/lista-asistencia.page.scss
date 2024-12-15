@@ -1,0 +1,19 @@
+ion-toolbar {
+  --background: #271505; /* Color de fondo del encabezado */
+  
+  ion-title {
+    font-size: 1.2rem; /* Tamaño del título */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    color: #ffffff; /* Color del título */
+  }
+
+  ion-buttons {
+    color: #ffffff; /* Color de los botones del menú */
+  }
+}
+ion-button[expand="full"] {
+  --background: #d43f4a; /* Color naranja para el botón de guardar */
+  --color: #fff; /* Texto blanco */
+  --border-radius: 8px; /* Bordes redondeados */
+}

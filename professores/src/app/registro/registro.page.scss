@@ -1,0 +1,104 @@
+/* Encabezado */
+ion-toolbar {
+  --background: #2a1600;
+  ion-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #9b7676;
+  }
+  ion-buttons {
+    color: #9b7676;
+  }
+}
+
+/* Fondo general del contenido */
+ion-content {
+  --background: linear-gradient(to bottom right, #835506, #372002); 
+  padding: 20px;
+}
+
+/* Estilo del ion-card */
+ion-card {
+  background-color: #783818;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Títulos y subtítulos */
+ion-card-title {
+  color: #290f02;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ion-card-subtitle {
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Campos de entrada */
+ion-item {
+  margin-bottom: 16px;
+  --background: transparent;
+}
+
+ion-label {
+  color: #5c4c3b; /* Color de etiquetas */
+}
+
+ion-input {
+  --placeholder-color: #9c8f7e;
+}
+
+/* Botones */
+ion-button {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  --background: #925307;
+  --color: #fff;
+}
+
+ion-button:hover {
+  --background: #d43f4a; /* Color al pasar el ratón */
+}
+
+ion-button[type="submit"] {
+  --background: #925307;
+  --color: #fff;
+}
+
+ion-button[fill="clear"] {
+  --color: #ff8c00; 
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Botón de "Volver" */
+.back-button {
+  margin-top: 20px;
+  --background: #925307; 
+  --color: #000000;
+  width: 100%;
+}
+
+/* Mensajes de error */
+ion-text[color="danger"] {
+  color: #b38484; 
+  font-size: 14px;
+}
+
+/* Grid y columnas */
+ion-grid {
+  margin-top: 20px;
+}
+
+ion-col {
+  text-align: center;
+}

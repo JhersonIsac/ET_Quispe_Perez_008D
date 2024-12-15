@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button> <!-- Ícono del menú hamburguesa -->
+    </ion-buttons>
+    <ion-title>Justificaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label>Filtrar por asignatura</ion-label>
+      <ion-select [(ngModel)]="selectedAsignatura" (ionChange)="filtrarJustificaciones()">
+        <ion-select-option *ngFor="let asignatura of asignaturas" [value]="asignatura">
+          {{ asignatura }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+
+  <ion-list>
+    <ion-item *ngFor="let justificacion of justificacionesFiltradas">
+      <ion-label>
+        <h2>{{ justificacion.estudiante }}</h2>
+        <p>Asignatura: {{ justificacion.asignatura }}</p>
+        <p>Fecha: {{ justificacion.fecha }}</p>
+        <p>Descripción: {{ justificacion.descripcion }}</p>
+        <p><strong>Comentario:</strong> {{ justificacion.comentario || 'Sin comentario' }}</p>
+      </ion-label>
+      <ion-button fill="clear" slot="end" (click)="editarComentario(justificacion)">
+        Editar
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

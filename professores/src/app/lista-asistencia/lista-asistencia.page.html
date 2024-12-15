@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button> <!-- Ícono del menú hamburguesa -->
+    </ion-buttons>
+    <ion-title>Lista de Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Calendario para seleccionar la fecha -->
+  <ion-item>
+    <ion-label>Seleccionar Fecha</ion-label>
+    <ion-datetime
+      [(ngModel)]="fechaSeleccionada"
+      display-format="YYYY-MM-DD"
+      placeholder="Seleccionar fecha"
+    ></ion-datetime>
+  </ion-item>
+
+  <ion-button expand="full" (click)="setFechaClase()">Establecer Fecha de Clase</ion-button>
+
+  <!-- Lista de clases y estudiantes -->
+  <ion-list>
+    <ion-item *ngFor="let clase of clases">
+      <ion-label>
+        <h2>{{ clase.nombre }} - {{ clase.fecha }}</h2>
+        <ion-list>
+          <ion-item *ngFor="let estudiante of clase.estudiantes; let i = index">
+            <ion-label>{{ estudiante.nombre }}</ion-label>
+            <ion-toggle
+              slot="end"
+              [(ngModel)]="estudiante.estadoAsistencia"
+              (ionChange)="toggleAsistencia(clase, i)"
+            ></ion-toggle>
+          </ion-item>
+        </ion-list>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- Botón de guardar al final -->
+  <ion-footer>
+    <ion-toolbar>
+      <ion-button expand="full" (click)="guardarAsistencia()">Guardar</ion-button>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

@@ -1,0 +1,49 @@
+ion-content {
+  --background: rgb(72, 60, 60);
+  padding: 20px;
+}
+
+.inicio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.inicio-image {
+  width: 80%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+ion-button {
+  margin: 10px 0;
+  --background: #f56c6c; /* Color de fondo del botón */
+  --color: #fff; /* Color del texto del botón */
+  --border-radius: 4px; /* Bordes redondeados */
+  --padding-start: 16px; /* Espaciado interno del botón */
+  --padding-end: 16px; /* Espaciado interno del botón */
+  --padding-top: 12px; /* Espaciado interno del botón */
+  --padding-bottom: 12px; /* Espaciado interno del botón */
+}
+
+ion-button:hover {
+  --background: #d43f4a; /* Color de fondo del botón al pasar el ratón */
+}
+
+ion-toolbar {
+  --background: #271505; /* Color de fondo del encabezado */
+  
+  ion-title {
+    font-size: 1.2rem; /* Tamaño del título */
+    font-weight: bold; /* Negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    color: #9b7676; /* Color del título */
+  }
+
+  ion-buttons {
+    color: #9b7676; /* Color de los botones del menú */
+  }
+}

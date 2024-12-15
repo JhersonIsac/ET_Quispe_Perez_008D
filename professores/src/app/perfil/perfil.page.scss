@@ -1,0 +1,112 @@
+/* Encabezado del perfil */
+ion-toolbar {
+  --background: #271505; /* Cambié a color de fondo del encabezado */
+}
+
+/* Fondo general del contenido */
+ion-content {
+  --background: rgb(72, 60, 60); /* Cambié el fondo degradado */
+  padding: 20px;
+}
+
+/* Estilo de la tarjeta del perfil */
+ion-card {
+  background-color: #885003; /* Cambié el fondo de la tarjeta */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Título del perfil */
+ion-card-title {
+  color: #9b7676; /* Cambié el color del título */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Subtítulo o descripción del perfil */
+ion-card-subtitle {
+  color: #9b7676; /* Cambié el color del subtítulo */
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo de los campos del formulario */
+ion-item {
+  margin-bottom: 16px;
+  --background: transparent;
+  --inner-border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Etiquetas del formulario */
+ion-label {
+  color: #f56c6c; /* Cambié el color de las etiquetas */
+  font-weight: bold;
+}
+
+/* Campos de entrada */
+ion-input {
+  --placeholder-color: #9b7676; /* Cambié el color del placeholder */
+  --padding-start: 12px;
+  --padding-end: 12px;
+}
+
+/* Botón para guardar cambios */
+ion-button {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+ion-button[type="submit"] {
+  --background: #f56c6c; /* Cambié el color de fondo del botón */
+  --color: #fff;
+}
+
+/* Botón de limpiar/editar imagen de perfil */
+ion-button[fill="clear"] {
+  --color: #f56c6c; /* Cambié el color del botón de limpiar/editar */
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Estilo para los mensajes de éxito o error */
+ion-text[color="success"] {
+  color: #4caf50; /* No cambié este color ya que es un verde que se usa comúnmente para éxito */
+  font-size: 14px;
+}
+
+ion-text[color="danger"] {
+  color: #d43f4a; /* Cambié el color de error a uno más acorde */
+  font-size: 14px;
+}
+
+/* Estilo del área de la imagen de perfil */
+.imagen-perfil {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.imagen-perfil img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Rejilla para el botón de editar perfil */
+ion-grid {
+  margin-top: 20px;
+}
+
+ion-col {
+  text-align: center;
+}
