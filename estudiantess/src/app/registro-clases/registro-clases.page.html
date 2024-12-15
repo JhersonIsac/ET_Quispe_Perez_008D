@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Registro de Clases</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="registroForm" (ngSubmit)="registrarClase()">
+    <ion-item>
+      <ion-label position="floating">Alumno</ion-label>
+      <ion-input formControlName="nombreUsuario" type="text"></ion-input>
+    </ion-item>
+    <ion-note color="danger" *ngIf="registroForm.get('nombreUsuario')?.invalid && submitted">
+      El nombre de usuario es requerido.
+    </ion-note>
+
+    <ion-item>
+      <ion-label position="floating">RUT</ion-label>
+      <ion-input formControlName="rut" type="text" placeholder="Ej: 12345678-9"></ion-input>
+    </ion-item>
+    <ion-note color="danger" *ngIf="registroForm.get('rut')?.invalid && submitted">
+      RUT inválido o requerido.
+    </ion-note>
+
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input formControlName="email" type="email"></ion-input>
+    </ion-item>
+    <ion-note color="danger" *ngIf="registroForm.get('email')?.invalid && submitted">
+      Email inválido o requerido (debe ser &#64;gmail.com).
+    </ion-note>
+
+    <ion-item>
+      <ion-label position="floating">Fecha</ion-label>
+      <ion-input formControlName="fecha" type="date"></ion-input>
+    </ion-item>
+    <ion-note color="danger" *ngIf="registroForm.get('fecha')?.invalid && submitted">
+      La fecha es requerida.
+    </ion-note>
+
+    <ion-item>
+      <ion-label>Asignatura</ion-label>
+      <ion-select formControlName="asignatura" (ionChange)="onAsignaturaChange()" required>
+        <ion-select-option *ngFor="let asignatura of asignaturas" [value]="asignatura.nombre">
+          {{ asignatura.nombre }} - {{ asignatura.descripcion }}
+        </ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-note color="danger" *ngIf="registroForm.get('asignatura')?.invalid && submitted">
+      Debes seleccionar una asignatura.
+    </ion-note>
+
+    <ion-item *ngIf="selectedAsignatura">
+      <ion-label>Profesor</ion-label>
+      <ion-input [value]="selectedAsignatura.profesor" disabled></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Registrar Clase</ion-button>
+
+    <ion-note color="success" *ngIf="mensaje">{{ mensaje }}</ion-note>
+    
+    <!-- Mensaje de error general si el formulario es inválido -->
+    <ion-note color="danger" *ngIf="submitted && registroForm.invalid">
+    </ion-note>
+  </form>
+</ion-content>

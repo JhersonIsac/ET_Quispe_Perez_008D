@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="inicio-container">
+    <img src="assets/icon/libro1.png" class="logo">
+
+    <h2>Aplicacion Estudiantes</h2>
+
+    <!-- Carrusel -->
+    <div class="carousel-container">
+      <div class="carousel">
+        <img [src]="images[currentImageIndex]" class="carousel-image" />
+      </div>
+      <div class="carousel-buttons">
+        <ion-button fill="clear" (click)="prevImage()">
+          <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear" (click)="nextImage()">
+          <ion-icon slot="icon-only" name="chevron-forward"></ion-icon>
+        </ion-button>
+      </div>
+
+      <ion-button expand="full" routerLink="/login" class="login-btn">Iniciar Sesión</ion-button>
+      <ion-button expand="full" routerLink="/registro" class="register-btn">Registrarse</ion-button>
+
+    </div>
+  </div>
+</ion-content>
+

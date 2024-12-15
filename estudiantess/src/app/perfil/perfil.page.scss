@@ -1,0 +1,114 @@
+/* Encabezado del perfil */
+ion-toolbar {
+    --background: #2a1600; 
+  }
+  
+  /* Fondo general del contenido */
+  ion-content {
+    --background: linear-gradient(to bottom right, #835506, #372002); /* Fondo degradado */
+    padding: 20px;
+  }
+  
+  /* Estilo de la tarjeta del perfil */
+  ion-card {
+    background-color: #783818; /* Fondo de la tarjeta */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Título del perfil */
+  ion-card-title {
+    color: #290f02; 
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Subtítulo o descripción del perfil */
+  ion-card-subtitle {
+    color: #000000; 
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo de los campos del formulario */
+  ion-item {
+    margin-bottom: 16px;
+    --background: transparent;
+    --inner-border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  /* Etiquetas del formulario */
+  ion-label {
+    color: #5c4c3b; /* Color de las etiquetas */
+    font-weight: bold;
+  }
+  
+  /* Campos de entrada */
+  ion-input {
+    --placeholder-color: #9c8f7e;
+    --padding-start: 12px;
+    --padding-end: 12px;
+  }
+  
+  /* Botón para guardar cambios */
+  ion-button {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  ion-button[type="submit"] {
+    --background: #925307; /* Botón con color sólido */
+    --color: #fff;
+  }
+  
+  /* Botón de limpiar/editar imagen de perfil */
+  ion-button[fill="clear"] {
+    --color: #ff8c00; 
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para los mensajes de éxito o error */
+  ion-text[color="success"] {
+    color: #4caf50;
+    font-size: 14px;
+  }
+  
+  ion-text[color="danger"] {
+    color: #b38484; 
+    font-size: 14px;
+  }
+  
+  /* Estilo del área de la imagen de perfil */
+  .imagen-perfil {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .imagen-perfil img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* Rejilla para el botón de editar perfil */
+  ion-grid {
+    margin-top: 20px;
+  }
+  
+  ion-col {
+    text-align: center;
+  }
+  
+  

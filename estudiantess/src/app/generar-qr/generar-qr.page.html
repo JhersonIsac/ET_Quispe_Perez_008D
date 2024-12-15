@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- Botón del Menú Hamburguesa -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Generar QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"></ion-content>
+
+
+  <ion-img
+    src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSh-wrQu254qFaRcoYktJ5QmUhmuUedlbeMaQeaozAVD4lh4ICsGdBNubZ8UlMvWjKC"></ion-img>
+
+  <ion-content class="ion-padding">
+    <ion-button id="open-toast" expand="block">Generar QR</ion-button>
+    <p id="message">Puedes generar otro QR dandole al boton.</p>
+    <ion-toast trigger="open-toast" message="This toast will disappear after 5 seconds" [duration]="5000"></ion-toast>
+  </ion-content>
+
